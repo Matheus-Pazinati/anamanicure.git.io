@@ -1,0 +1,171 @@
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+main {
+  background: linear-gradient(#FEFEFE, #5e17eb, #0099FF, #EEEEEE);
+}
+
+.conteudo {
+  padding: 2em 0;
+}
+
+.titulo-principal {
+  font-size: 45px;
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+  padding: 1em 0;
+}
+
+
+.diferenciais {
+  width: 940px;
+  margin: 0 auto;
+  padding: 1em 0;
+}
+
+.bloco {
+  padding-top: 100px;
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+}
+
+
+.diferencial {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.diferencial::before{
+  content: "★";
+}
+
+.diferencial:first-child{
+  font-weight: bold;
+}
+
+.local-trabalho {
+  width: 60%;
+  box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.7);
+}
+
+.servicos {
+  padding: 15px;
+}
+
+.servicos ul {
+  width: 940px;
+  margin: 20px auto;
+
+}
+
+.servicos li {
+  display: inline-block;
+  width: 30%;
+  margin: 0 1%;
+  text-align: center;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  vertical-align: top;
+  padding: 30px 20px;
+  box-shadow: inset 0 0 30px 2px #0033FF;
+  transition: 700ms all;
+}
+
+.servicos li:hover{
+  border-color: #0033FF;
+  transform: scale(1.1);
+}
+
+.servico-foto {
+  width: 75%;
+}
+
+
+.titulo-secundario {
+  color: #FFFFFF;
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+  padding: 1em 0;
+}
+
+
+.servico-descricao {
+  font-size: 17px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.servico-preco {
+  font-weight: bold;
+  font-size: 22px;
+  padding: 15px 0;
+}
+
+.titulo-sessao {
+  font-size: 28px;
+  font-weight: bold;
+  padding-bottom: 25px;
+}
+
+.localizacao {
+  width: 940px;
+  margin: 0 auto;
+  padding-bottom: 3em;
+}
+
+.endereco {
+  text-align: center;
+  font-size: 22px;
+  padding-bottom: 1em;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+  .caixa, .servicos > ul, .diferenciais, .localizacao {
+    width: auto;
+  }
+
+  .logotipo {
+    position: static;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  nav {
+    display: block;
+    position: static;
+  }
+
+  .bloco {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .local-trabalho {
+    width: 100%;
+    margin: 1em 0;
+  }
+
+  .servicos li {
+    display: block;
+    width: 100%;
+    margin: 2em 0;
+  }
+}
+
+
+
+

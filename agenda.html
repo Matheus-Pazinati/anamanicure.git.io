@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Agendar - Ana Carolina</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="agenda.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="caixa">
+      <h1 class="logo">
+        <img src="logo.png" alt="Logo Ana Manicure Pedicure" class="logotipo">
+      </h1>
+      <nav>
+        <ul>
+          <li class="itens-menu"><a href="principal.html">principal</a></li>
+          <li class="itens-menu"><a href="fotos.html">fotos</a></li>
+          <li class="itens-menu"><a href="agenda.html">agendar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h1 class="titulo">Agende seu horário</h1>
+    <form>
+      <fieldset class="informacoes-basicas">
+        <label for="nomecompleto">Nome completo</label>
+        <input type="text" id="nomecompleto" required>
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" required placeholder="(XX)XXXXX-XXXX">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required placeholder="seuemail@dominio.com.br">
+
+        <label for="comentario">Algum comentário?</label>
+        <textarea class="comentario" name="comentario" id="comentario" cols="50" rows="15"></textarea>
+      </fieldset>
+
+      <fieldset class="opcoes">
+        <legend>Qual serviço você deseja fazer?</legend>
+
+        <label><input type="radio" name="opcao-servico" value="pe" checked>Pé</label>
+        
+        <label><input type="radio" name="opcao-servico" value="mao">Mão</label>
+
+        <label><input type="radio" name="opcao-servico" value="pemao">Pé e Mão</label>
+        
+      </fieldset>
+
+      <fieldset class="horario">
+        <legend>Escolha o melhor dia e horário para você</legend>
+
+        <div class="hora"></div>
+        <label>Qual dia</label>
+        <input type="date" value="data" required>
+
+        <div class="hora"></div>
+        <label>Horário:</label>
+        <input type="time" value="time" required>
+
+      </fieldset>
+
+      <div class="botao">
+      <input type="submit" value="Enviar" class="enviar">
+    </div>
+    </form>
+  </main>
+  
+  <footer>
+    <img src="logo-rodape.png" alt="Logo Ana Manicure Pedicure" class="logo-rodape">
+    <p class="copyright"> &copy; Copyright Ana Carolina - Manicure e Pedicure</p>
+  </footer>
+</body>
+</html>
