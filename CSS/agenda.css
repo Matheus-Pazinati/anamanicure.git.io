@@ -36,6 +36,7 @@ main {
   width: 35%;
   padding: 1em;
 }
+
 form legend {
   font-size: 22px;
   font-weight: bold;
@@ -61,7 +62,6 @@ form legend {
   display: block;
   margin: 0.5em 0;
 }
-
 
 .enviar {
 width: 30%;
@@ -98,51 +98,56 @@ transition: 500ms all;
     position: static;
     text-align: center;
   }
-.informacoes-basicas {
-  margin: 0 auto;
-  width: 100%;
-}
+
+  .informacoes-basicas {
+    margin: 0 auto;
+    width: 100%;
+  }
+
   .informacoes-basicas > label{
     text-align: center;
     padding-bottom: 1em;
   }
-.informacoes-basicas > input {
-  margin: 0 auto;
-  width: 50%;
-}
 
-.comentario {
-  display: block;
-  margin: 0 auto;
-  width: 70%;
-}
+  .informacoes-basicas > input {
+    margin: 0 auto;
+    width: 50%;
+  }
 
-.opcoes, .horario {
-  text-align: center;
-  padding: 1em 0;
-  margin: 1em 0;
-}
+  .comentario {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+  }
 
-.opcoes > label {
-  font-size: 22px;
-}
+  .opcoes, .horario {
+    text-align: center;
+    padding: 1em 0;
+    margin: 1em 0;
+  }
 
-.horario > label {
-  font-size: 22px;
-  display: block;
-  padding: 1em;
-}
+  .opcoes > label {
+    font-size: 22px;
+  }
 
-.horario > input {
-  width: 40%;
-  height: 4em;
-  padding: 1em 0;
-}
-.botao {
-  text-align: center;
-}
-.enviar {
-  width: 80%;
-}
+  .horario > label {
+    font-size: 22px;
+    display: block;
+    padding: 1em;
+  }
+
+  .horario > input {
+    width: 40%;
+    height: 4em;
+    padding: 1em 0;
+  }
+
+  .botao {
+    text-align: center;
+  }
+
+  .enviar {
+    width: 80%;
+  }
 
 }
