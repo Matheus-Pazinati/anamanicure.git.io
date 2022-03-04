@@ -3,7 +3,7 @@ body {
 }
 
 main {
-  background: linear-gradient(#FEFEFE, #5e17eb, #0017FF, #FEFEFE);
+  background: linear-gradient(#DEDEDE, #7160BE, #CECECE);
 }
 
 .titulo-fotos {
@@ -52,6 +52,3 @@ main {
     margin: 0 auto;
   }
 }
-
-
-
