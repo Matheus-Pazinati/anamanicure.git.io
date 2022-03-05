@@ -1,10 +1,5 @@
-
-body {
-  font-family: 'Lato', sans-serif;
-}
-
 main {
-  background: linear-gradient(#DEDEDE, #7160BE, #CECECE);
+  background: linear-gradient(#DEDEDE, #6150AE, #CECECE);
 }
 
 .conteudo {
@@ -20,16 +15,10 @@ main {
 }
 
 .diferenciais {
-  width: 940px;
-  margin: 0 auto;
   padding: 1em 0;
-}
-
-.bloco {
-  padding-top: 100px;
-  display: inline-block;
-  vertical-align: top;
-  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .diferencial {
@@ -38,7 +27,7 @@ main {
 }
 
 .diferencial::before{
-  content: "★";
+  content: "★ ";
 }
 
 .diferencial:first-child{
@@ -46,7 +35,8 @@ main {
 }
 
 .local-trabalho {
-  width: 60%;
+  width: 30%;
+  border-radius: 8px;
   box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.7);
 }
 
@@ -55,20 +45,18 @@ main {
 }
 
 .servicos ul {
-  width: 940px;
-  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .servicos li {
-  display: inline-block;
-  width: 30%;
-  margin: 0 1%;
+  width: 20%;
   text-align: center;
   border: 1px solid #FFFFFF;
   border-radius: 10px;
   background: #FFFFFF;
-  box-sizing: border-box;
-  vertical-align: top;
   padding: 30px 20px;
   box-shadow: inset 0 0 30px 2px #0033FF;
   transition: 700ms all;
@@ -110,7 +98,7 @@ main {
 }
 
 .localizacao {
-  width: 940px;
+  width: 60%;
   margin: 0 auto;
   padding-bottom: 3em;
 }
@@ -123,40 +111,52 @@ main {
   font-weight: bold;
 }
 
-@media screen and (max-width: 480px) {
-  .caixa, .servicos > ul, .diferenciais, .localizacao {
-    width: auto;
+@media screen and (max-width: 700px) {
+  .caixa {
+    flex-direction: column;
+    gap: 2rem;
   }
 
-  .logotipo {
-    position: static;
-    width: 65%;
-    margin: 0 auto;
+  .diferenciais {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
   }
-
-  .logo {
-    text-align: center;
-  }
-
-  nav {
-    display: block;
-    position: static;
-  }
-
-  .bloco {
-    display: block;
-    text-align: center;
-    width: 100%;
-  }
-
+  
   .local-trabalho {
-    width: 100%;
-    margin: 1em 0;
+    width: 80%;
+  }
+
+  .servicos ul {
+    flex-direction: column;
   }
 
   .servicos li {
-    display: block;
-    width: 100%;
-    margin: 2em 0;
+    width: 80%;
+  }
+
+  .servico-foto {
+    width: 50%;
+  }
+
+  .localizacao {
+    width: 80%;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1440px) {
+  .local-trabalho {
+    width: 40%;
+  }
+
+  .servicos li {
+    width: 31%;
+    height: 520px;
+    max-height: 520px;
+  }
+
+  .localizacao {
+    width: 85%;
   }
 }

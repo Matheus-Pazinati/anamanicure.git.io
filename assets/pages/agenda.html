@@ -2,25 +2,24 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agendar - Ana Carolina</title>
-  <link rel="stylesheet" href="../CSS/reset.css">
-  <link rel="stylesheet" href="../CSS/style.css">
-  <link rel="stylesheet" href="../CSS/agenda.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/agenda.css">
 </head>
 <body>
   <header>
     <div class="caixa">
       <h1 class="logo">
-        <a href="../index.html"><img src="../Imagens/logo.png" alt="Logotipo Ana Manicure Pedicure" class="logotipo"></a>
+        Ana
+        <img src="../images/logo.png" alt="Logotipo Ana Manicure Pedicure" class="imagem-logo">
+        Manicure e Pedicure
       </h1>
       <nav>
-        <ul>
-          <li class="itens-menu"><a href="../index.html">home</a></li>
-          <li class="itens-menu"><a href="../Páginas/fotos.html">fotos</a></li>
-          <li class="itens-menu"><a href="../Páginas/agenda.html">agendar</a></li>
+        <ul class="menu">
+          <li class="itens-menu"><a href="../../index.html">home</a></li>
+          <li class="itens-menu"><a href="./fotos.html">fotos</a></li>
+          <li class="itens-menu"><a href="./agenda.html">agendar</a></li>
         </ul>
       </nav>
     </div>
@@ -41,7 +40,6 @@
         <label for="comentario">Algum comentário?</label>
         <textarea class="comentario" name="comentario" id="comentario" cols="50" rows="15"></textarea>
       </fieldset>
-
       <fieldset class="opcoes">
         <legend>Qual serviço você deseja fazer?</legend>
 
@@ -50,30 +48,24 @@
         <label><input type="radio" name="opcao-servico" value="mao">Mão</label>
 
         <label><input type="radio" name="opcao-servico" value="pemao">Pé e Mão</label>
-        
-      </fieldset>
 
+      </fieldset>
       <fieldset class="horario">
         <legend>Escolha o melhor dia e horário para você</legend>
-
         <div class="hora"></div>
         <label>Qual dia</label>
         <input type="date" value="data" required>
-
         <div class="hora"></div>
         <label>Horário:</label>
         <input type="time" value="time" required>
-
       </fieldset>
-
       <div class="botao">
       <input type="submit" value="Enviar" class="enviar">
     </div>
     </form>
   </main>
-  
   <footer>
-    <img src="../Imagens/logo-rodape.png" alt="Logotipo Ana Manicure Pedicure" class="logo-rodape">
+    <img src="../images/logo.png" alt="Logotipo Ana Manicure Pedicure" class="imagem-logo">
     <p class="copyright"> &copy; Copyright Ana Carolina - Manicure e Pedicure</p>
   </footer>
 </body>

@@ -1,0 +1,47 @@
+main {
+  background: linear-gradient(#DEDEDE, #6150AE, #CECECE);
+}
+
+.titulo-fotos {
+  color: #A150FE;
+  text-align: center;
+  font-size: 52px;
+  font-weight: bold;
+  padding: 1em 0;
+}
+
+.unhasmao {
+  padding: 1rem 3rem 2rem;
+}
+
+.unhasmao ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.unhasmao li {
+  height: 400px;
+}
+
+.unhasmao li:hover,
+.unhasmao li:active {
+  border-radius: 8px;
+  border: 2px solid #6150AE;
+}
+
+.unhasmao li img {
+  width: 100%;
+  height: 100%;
+  max-width: 403px;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 700px) {
+  .caixa {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

@@ -1,0 +1,97 @@
+main {
+  background: linear-gradient(#FEFEFE, #DDDDDD, #FEFEFE);
+}
+
+.titulo {
+  text-align: center;
+  padding: 1em 0;
+  font-size: 38px;
+  font-weight: bold;
+  color: #111111;
+}
+
+form {
+  padding: 1.5rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.informacoes-basicas > input {
+  display: block;
+  padding: 1em;
+  width: 40%;
+}
+
+.informacoes-basicas > label {
+  display: block;
+  margin: 20px 0 5px 0;
+  font-weight: bold;
+}
+
+.comentario {
+  margin-bottom: 1em;
+  width: 35%;
+  padding: 1em;
+}
+
+form legend {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 1em 0;
+}
+.opcoes label {
+  display: block;
+  padding: 0.3em 0;
+  font-size: 20px;
+}
+
+.horario label {
+  padding: 0.5em 0;
+  font-size: 20px;
+  margin-right: 1em;
+}
+
+.horario input {
+  width: 20%;
+}
+
+.hora {
+  display: block;
+  margin: 0.5em 0;
+}
+
+.enviar {
+width: 30%;
+height: 50px;
+font-size: 25px;
+font-weight: bold;
+margin: 2em 0;
+background: #0000FF;
+color: #FCFCFC;
+transition: 500ms all;
+}
+
+.enviar:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  form {
+    width: 100%;
+  }
+
+  .informacoes-basicas > input, .comentario {
+    width: 80%;
+  }
+
+  .caixa {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .horario input {
+    width: 40%;
+    max-width: 160px;
+  }
+}
