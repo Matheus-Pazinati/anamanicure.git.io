@@ -1,6 +1,6 @@
 # <h1 align="center">Ana - Manicure e Pedicure</h1>
 <p align="center">
-  <img src="https://media.giphy.com/media/g5lYGejJkJv5vp7vxj/giphy.gif" width="100%">
+  <img src="https://media.giphy.com/media/g5lYGejJkJv5vp7vxj/giphy.gif">
 </p>
 <br>
 <h2>💅 Sobre</h2>
